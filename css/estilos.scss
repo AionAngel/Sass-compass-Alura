@@ -1,3 +1,29 @@
+/* Variaveis usadas no meu Sass */
+$cor-padrao: #c24e4b;
+$cor-auxiliar: #1e2c35;
+$branco: #FFF;
+$raio: 0.3em;
+
+@mixin borda-arredondada($raio: 0.3em) {
+
+  -webkit-border-radius: $raio;
+  -moz-border-radius: $raio;
+  -ms-border-radius: $raio;
+  -o-border-radius: $raio;
+  border-radius: $raio;
+
+}
+
+@mixin sombra-padrao {
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
+
+
+
 /** Geral **/
 body {
   font-family: "Roboto Slab", serif;
@@ -27,7 +53,7 @@ h2 {
 
 /** Header **/
 header {
-  border-top: 5px solid #66DDDD;
+  border-top: 5px solid $cor-padrao;
   background: rgba(30, 44, 53, 0.8);
   height: 90px;
   width: 100%;
@@ -56,7 +82,7 @@ header .container {
 }
 
 .menu-opcoes a {
-  color: white;
+  color: $branco;
   text-decoration: none;
 }
 
@@ -69,7 +95,7 @@ header .container {
   background: url(../imagens/destaque.jpg) center bottom repeat-x;
   -webkit-background-size: cover;
   background-size: cover;
-  color: white;
+  color: $branco;
   height: 330px;
   padding-top: 10em;
 }
@@ -91,13 +117,12 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
-  background: #66DDDD;
+  background: $cor-padrao;
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada(50px);
+  @include sombra-padrao;
   font-weight: bold;
 }
 
@@ -159,15 +184,15 @@ header .container {
 
 /** Planos **/
 .planos {
-  background: #1e2c35;
+  background: $cor-auxiliar;
 }
 
 .planos h2 {
-  color: #fff;
+  color: $branco;
 }
 
 .plano {
-  background: white;
+  background: $branco;
   width: 18em;
   display: inline-block;
   margin: 1em 0 0 1.4em;
@@ -179,9 +204,9 @@ header .container {
 }
 
 .plano h3 {
-  color: #fff;
+  color: $branco;
   font-size: 1.8em;
-  background: #66DDDD;
+  background: $cor-padrao;
   text-align: center;
   height: 2em;
   padding-top: .6em;
@@ -190,7 +215,7 @@ header .container {
 
 .plano div {
   text-align: center;
-  color: #66DDDD;
+  color: $cor-padrao;
   font-size: 2.75em;
 }
 
@@ -215,15 +240,14 @@ header .container {
 }
 
 .plano button {
-  background: #66DDDD;
+  background: $cor-padrao;
   border: 0;
-  color: #fff;
+  color: $branco;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada;
+  @include sombra-padrao;
   margin-left: 2em;
 }
 
@@ -306,22 +330,20 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include borda-arredondada;
   border: 2px solid #ccc;
 }
 
 .contato button {
   margin: 0 auto;
-  background: #66DDDD;
+  background: $cor-padrao;
   border: 0;
-  color: #fff;
+  color: $branco;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada;
+  @include sombra-padrao;
 }
 
 /** Footer **/
@@ -344,7 +366,7 @@ footer::after {
 
 footer::before {
   content: "";
-  background: #1e2c35;
+  background: $cor-auxiliar;
   top: 0;
   left: 0;
   bottom: 0;
@@ -389,7 +411,7 @@ footer .container img {
 }
 
 footer a {
-  color: #fff;
+  color: $branco;
   text-decoration: none;
 }
 
