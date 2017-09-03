@@ -6,6 +6,13 @@
     color: $branco;
     height: 330px;
     padding-top: 10em;
+
+    @media (max-width: 980px) {
+
+      font-size: 14px;
+      height: 250px;
+      
+    }
   
     p {
       width: 30em;
