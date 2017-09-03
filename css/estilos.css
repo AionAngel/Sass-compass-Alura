@@ -1,4 +1,16 @@
 /* Variaveis usadas no meu Sass */
+.destaque button, .plano button, .contato button {
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3); }
+
+.social li a {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -434,11 +446,6 @@ header {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 50px;
-    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-    -ms-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
     font-weight: bold; }
 
 /** Sobre **/
@@ -529,11 +536,6 @@ header {
   -ms-border-radius: 0.3em;
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  -ms-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em; }
 
 .icone-check, .icone-x {
@@ -618,12 +620,7 @@ textarea {
   -moz-border-radius: 0.3em;
   -ms-border-radius: 0.3em;
   -o-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  -ms-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3); }
+  border-radius: 0.3em; }
 
 /** Footer **/
 footer {
@@ -690,9 +687,6 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
   margin-left: 1em; }
 
 .social a {
