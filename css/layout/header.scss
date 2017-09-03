@@ -37,9 +37,8 @@ header {
       position: static;
       display: block;
       text-align: center;
-      form {
-        width: auto;
-      }
+      width: auto;
+      
     }
   
     ul {
@@ -53,9 +52,8 @@ header {
       @media #{$mq-mobile} {
 
         margin: .4em;
-        form {
-          width: auto;
-        }
+        width: auto;
+        
 
       }
     }
