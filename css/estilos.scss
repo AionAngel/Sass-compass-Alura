@@ -1,6 +1,12 @@
+$plataformas-spacing: 20px;
+@import 'plataformas/*.png';
+@import 'sprite/*.png';
+
 @import 'helpers/Variables';
 @import 'helpers/Mixins';
 @import 'base/normalize';
+
+
 
 @import 'layout/geral';
 @import 'layout/header';
@@ -10,20 +16,3 @@
 @import 'layout/blog';
 @import 'layout/contato';
 @import 'layout/footer';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
